@@ -16,8 +16,6 @@ jobs:
         git branch -d upm &> /dev/null || echo upm branch not found # recreate the upm branch each time
         git mv "$PKG_ROOT" "src/$UPM_ROOT"
         git mv "src/$UPM_ROOT" .
-        git mv demo/Assets demo/Sample
-        git mv demo/Sample $UPM_ROOT
         git mv doc Docs
         git mv Docs $UPM_ROOT
         git mv LICENSE $UPM_ROOT
